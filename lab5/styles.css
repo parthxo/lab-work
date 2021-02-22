@@ -1,0 +1,92 @@
+
+/* //for height// */
+:root {
+  --height: 50%;
+}
+
+.relative {
+  position: relative;
+}
+#heightTarget {
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  width: 2em;
+  background-color: hsl(103, 100%, 50%);
+  height: var(--height);
+  transition: 0.4s;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&family=Raleway&display=swap');
+
+
+/* body */
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  padding: 0.5em 0.5em ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  background-color: #9932CC;
+  /* hsl(193, 100%, 50%); */
+  color: hsl(100, 5%, 240%);
+}
+
+
+
+#search {
+  order: 1;
+}
+
+main section {
+
+
+  padding: 1em;
+  border-bottom: 0.5px dotted hsl(0, 70%, 80%);
+}
+
+
+
+@media screen and (min-width: 420px) {
+  header {
+    flex-direction: row;
+  }
+}
+
+
+
+@media screen and (min-width: 900px) {
+  header, main section {
+		padding: 1em 25vw;
+	}
+}
+
+/* for invalid values red box */
+
+input:invalid {
+  background-color: hsl(0, 70%, 70%);
+  border-color: hsl(0, 100%, 70%)
+}
+
+/* background and foreground colour */
+:root {
+
+  --height: 50%;
+  --bg-colour: #ffffff;
+  --fg-colour: #000000;
+}
+
+#colours {
+  background-color: var(--bg-colour);
+  color: var(--fg-colour);
+}

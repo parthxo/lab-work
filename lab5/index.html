@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab-05</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+
+    <header>
+      <section id="search">
+        <input placeholder="&#128269; search" id="myQuery" aria-label="search">
+        <button id="searchButton">search</button>
+      </section>
+
+<!-- search input heading -->
+
+      <h1>Document template&#127758;</h1>
+    </header>
+    <main>
+
+<!-- for backgorund anf foregorund colour  -->
+
+      <section id="colours">
+        <h2>Select your colours</h2>
+        <label for="myBG">Background: </label>
+        <input id="myBG" type="color" value="#ffffff"><br>
+        <label for="myFG">Foreground: </label>
+        <input id="myFG" type="color" value="#000000">
+        </section>
+
+<!-- for my name text box -->
+
+      <section>
+        <h2>Your Details</h2>
+        <label for="myName">Enter your name</label>
+        <input id="myName">
+
+<!-- for email -->
+
+<h2></h2>
+        <label for="email">Enter your email:</label>
+<input type="email" id="email"
+       pattern=".+@mail.com" size="30" required>
+
+<!-- Age Date and colour values -->
+
+       <h3></h3>
+       <label for="myAge">Enter your age (10-100): </label>
+       <input id="myAge" type="number"  min="10" max="100"> <input type="date" value="2021-01-01">
+
+
+<!-- Range -->
+       <section class="relative">
+         <h4> Height Range</h4>
+         <label for="myHeight"> Height: </label>
+         <input id="myHeight" type="range" value="50" min="20" max="100">
+         <div id="heightTarget"></div>
+       </section>
+
+<!-- check box remmember me -->
+ <p></p>
+<div>
+  <input type="checkbox" id="Remmember Me" name="Remmember Me">
+  <label for="Remmember Me">Remmember Me</label>
+</div>
+
+
+</section>
+
+
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
